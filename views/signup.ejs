@@ -1,0 +1,26 @@
+<%- include('./partials/header') -%>
+
+ <form action="/signup" method="POST">
+    <h2>Signup</h2>
+     <div class="name" >
+        <label for="name">name</label>
+        <input id="name" type="text" name="name" placeholder="name" required >
+     </div>
+     <div class="familyName">
+        <label for="familyName">familyName</label>
+        <input id="familyName" type="text" name="familyName" placeholder="familyName" required>
+     </div>
+     <div class="email">
+        <label for="">email</label>
+        <input type="email" name="email" placeholder="yourname@email.com" required>
+     </div>
+     <div class="password">
+        <label for="password">password</label>
+        <input id="password"  name="password" type="password" placeholder="*********" minlength="6" required >
+     </div>
+     <br>
+     <button type="submit" >signup</button>
+ </form>
+ 
+
+<%- include('./partials/footer') -%>
